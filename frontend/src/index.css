@@ -1,0 +1,106 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+body {
+  margin:0;
+  padding:0;
+}
+
+.comment-post-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  background-color: #a30c0c;
+  padding: 2rem;
+  border-radius: 8px; 
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.comment-post-container form label {
+  background-color: #6e0404;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: white; 
+  border-radius: 4px; 
+  display: block;
+}
+
+.comment-post-container form input[type="text"] {
+  padding: 0.5rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; 
+}
+
+.comment-post-container form input[type="submit"] {
+  box-sizing: border-box;
+  padding: 0.75rem;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.comment-post-container form input[type="submit"]:hover {
+  background-color: #d94b4b;
+}
+
+header {
+  width: 100%;
+  background-color: #313131;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  flex: 1; 
+  justify-content: space-evenly; 
+}
+
+header nav ul li {
+  padding: 1rem;
+  font-size: 1.3rem;
+  text-align: center;
+  flex: 1;
+  transition: ease .3s;
+  cursor: pointer;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header nav ul li:hover {
+  background-color: #444444;
+}
